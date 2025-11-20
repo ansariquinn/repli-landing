@@ -123,30 +123,47 @@
 
 <!-- Navigation (FIXED SPACING) -->
 <nav style="
-  position:fixed; top:0; left:0; width:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
   background:rgba(255,255,255,0.9);
   backdrop-filter:blur(8px);
-  padding:15px 30px;
-  padding-right:60px;      /* moves button left */
-  display:flex; 
-  justify-content:space-between; 
-  align-items:center;
-  border-bottom:1px solid #dce3f7; 
+  padding:15px 0;
+  border-bottom:1px solid #dce3f7;
   z-index:999;
-  animation:fadeIn 0.8s ease;
 ">
+  <div style="
+    max-width:1100px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+  ">
+    <!-- Logo -->
+    <div style="
+      font-size:24px;
+      font-weight:700;
+      color:var(--brand-primary);
+      letter-spacing:-0.5px;
+    ">
+      Repli
+    </div>
 
-  <div style="font-size:24px; font-weight:700; color:var(--brand-primary); letter-spacing:-0.5px;">
-    Repli
-  </div>
+    <!-- Nav Links + Button -->
+    <div style="display:flex; align-items:center; gap:25px;">
+      <a href="#features" style="font-size:16px; color:#444; text-decoration:none;">Features</a>
+      <a href="#privacy" style="font-size:16px; color:#444; text-decoration:none;">Privacy</a>
+      <a href="#faq" style="font-size:16px; color:#444; text-decoration:none;">FAQ</a>
 
-  <div style="display:flex; align-items:center; gap:25px; margin-right:40px;">
-    <a href="#features" style="font-size:16px; color:#444; text-decoration:none;">Features</a>
-    <a href="#privacy" style="font-size:16px; color:#444; text-decoration:none;">Privacy</a>
-    <a href="#faq" style="font-size:16px; color:#444; text-decoration:none;">FAQ</a>
-    <a href="#" class="cta-btn" style="padding:10px 20px; font-size:16px;">Add to Chrome</a>
+      <a href="#" class="cta-btn" style="padding:10px 20px; font-size:16px;">
+        Add to Chrome
+      </a>
+    </div>
   </div>
 </nav>
+
 
 <div style="height:80px;"></div>
 
@@ -229,3 +246,4 @@
 
 </body>
 </html>
+
